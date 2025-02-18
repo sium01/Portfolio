@@ -6,7 +6,7 @@ const userRoutes = require('./routes/user');
 const projectRoutes = require('./routes/project');
 
 const app = express();
-const port =1208;
+const port =1212;
 
 app.use(bodyParser.json());
 app.use(cors());
