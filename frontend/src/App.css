@@ -1,0 +1,34 @@
+.brand{
+ 
+
+ font-family: "Jaro", serif;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ font-style: normal;
+
+}
+.nav-links button{
+width: 120px;
+
+box-shadow: 2px 2px 30px rgba(244, 243, 248, 0.979);
+border: 3px rgb(0, 0, 0) solid;
+border-radius: 5px;
+margin: 30px auto;
+flex-direction: column;
+position:relative;
+margin-top: -60px;
+
+}
+.nav-links button {
+background-color: #ff7700;
+ transition: background-color 0.5s; 
+}
+
+.nav-links button:hover {
+
+ background-color: #096cff; 
+}
+
+button:not(:last-child){
+ margin-right: 5px;
+}

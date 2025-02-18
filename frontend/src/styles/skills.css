@@ -1,0 +1,64 @@
+/* src/styles/skills.css */
+.skills-section {
+ padding: 4rem 2rem;
+
+}
+
+.skills-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 2rem;
+ margin-top: 2rem;
+}
+
+.skill-item {
+ background: white;
+ padding: 1.5rem;
+ border-radius: 10px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+ transform: translateY(-5px);
+}
+
+.skill-name {
+ font-weight: 600;
+ color: #2d3436;
+ margin-bottom: 1rem;
+}
+
+.skill-progress {
+ height: 12px;
+ background: #e0e0e0;
+ border-radius: 6px;
+ overflow: hidden;
+ position: relative;
+}
+
+.progress-bar {
+ height: 100%;
+ background: #2ecc71;
+ border-radius: 6px;
+ position: relative;
+ transition: width 0.5s ease;
+}
+
+.progress-bar::after {
+ content: attr(data-percentage)"%";
+ position: absolute;
+ right: 5px;
+ top: -25px;
+ background: #2ecc71;
+ color: white;
+ padding: 4px 8px;
+ border-radius: 4px;
+ font-size: 12px;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+}
+
+.skill-item:hover .progress-bar::after {
+ opacity: 1;
+}

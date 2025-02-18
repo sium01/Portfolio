@@ -6,10 +6,13 @@ const userRoutes = require('./routes/user');
 const projectRoutes = require('./routes/project');
 
 const app = express();
-const port =1212;
+const port =1224;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.get('/',(req,res)=>{
+    res.send("Hello!")
+})
 
 mongoose.set("strictQuery", true); // Warning fix
 
