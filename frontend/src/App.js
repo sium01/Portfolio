@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Home } from './components/Home';
+import {Home} from './components/Home';
 import { Skills } from './components/Skills';
 import { Project } from './components/Project'; 
 import { Resume } from './components/Resume';
-// import { Videos } from './components/Videos';
+
 import { Contact } from './components/Contact';
-import Login from './components/Login';
-import ForgotPassword from './components/ForgotPassword';
-import Register from './components/Register';
-import AddProject from './components/AddProject';
+import {Login} from './components/Login';
+import {ForgotPassword} from './components/ForgotPassword';
+import {Register} from './components/Register';
+import {AddProject} from './components/AddProject';
 import './App.css';
 
 const App = () => {
@@ -50,9 +50,7 @@ const App = () => {
                     <button style={{ backgroundColor: "#339933" }}><Link to="/login" style={{ color: "#FFFFFF", fontSize: "28px" }}>Login</Link></button>
                     <button style={{ backgroundColor: "#339933" }}><Link to="/register" style={{ color: "#FFFFFF", fontSize: "28px" }}>Register</Link></button>
                     <button style={{ backgroundColor: "#339933" }}><Link to="/add-project" style={{ color: "#FFFFFF", fontSize: "28px" }}>Add Project</Link></button>
-                   
                 </div>
-                
             </nav>
             <br/>
             <br/>
@@ -62,23 +60,18 @@ const App = () => {
             <br/>
             <br/>
             
-           
-          
-            <h1 id="dynamic-text"></h1>
+            <h1 id="dynamic-text"> </h1>
             
-           
-         
             <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/skills" component={Skills} />
-                <Route path="/project" component={Project} /> 
-                <Route path="/resume" component={Resume} />
-                {/* <Route path="/videos" component={Videos} /> */}
-                <Route path="/contact" component={Contact} />
-                <Route path="/login" component={Login} />
-                <Route path="/forgot-password" component={ForgotPassword} />
-                <Route path="/register" component={Register} />
-                <Route path="/add-project" component={AddProject} />
+                <Route  exact path="/" element={<Home />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/project" element={<Project />} /> 
+                <Route path="/resume" element={<Resume />} />
+               <Route path="/contact" element={<Contact />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/add-project" element={<AddProject />} />
             </Switch>
         </Router>
     );

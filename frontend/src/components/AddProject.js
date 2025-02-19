@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './AddProject.css';
 
-const AddProject = ({ history }) => {
+export const AddProject = ({ history }) => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [link, setLink] = useState('');
@@ -31,4 +31,3 @@ const AddProject = ({ history }) => {
     );
 };
 
-export default AddProject;

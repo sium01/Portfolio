@@ -1,4 +1,5 @@
-export const Home = () => {
+
+ export const Home = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
@@ -12,7 +13,7 @@ export const Home = () => {
  color:"#000000"
  }}>🚀 Full Stack Developer | MERN Stack Enthusiast  </h2>
  <p align="center">
-  <img src="https://camo.githubusercontent.com/b0d5210222fd2abc8a886d1ff86ae33baf29e824eb2efcc4fe755551e0a87cae/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f7167515567674143335066763638377150432f67697068792e6769663f6369643d373930623736313137336264396130363864366634636362336437333237366561323463376234633963623534373630267269643d67697068792e6769662663743d67" alt="Your Image" width="500" height="300"/>
+  <img src= "https://camo.githubusercontent.com/b0d5210222fd2abc8a886d1ff86ae33baf29e824eb2efcc4fe755551e0a87cae/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f7167515567674143335066763638377150432f67697068792e6769663f6369643d373930623736313137336264396130363864366634636362336437333237366561323463376234633963623534373630267269643d67697068792e6769662663743d67" alt="#" width="500" height="300"/>
 </p>
         <p style={{
          margin:"50px"
@@ -63,10 +64,10 @@ export const Home = () => {
     <h1 align="center">Soft Skills</h1>
  
   <table align="center">
- <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />  
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> 
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" />
+ <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white"alt="#" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="#"/>  
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"alt="#" /> 
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"alt="#" />
   </table>
  
    </span>
@@ -74,10 +75,10 @@ export const Home = () => {
 <span>
 <h1 align="center">🛠️ Tools </h1> 
 <p align="center">
-  <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-  <img src="https://img.shields.io/badge/WebStorm-000000?style=for-the-badge&logo=webstorm&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="#"/>
+  <img src="https://img.shields.io/badge/WebStorm-000000?style=for-the-badge&logo=webstorm&logoColor=white"alt="#"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"alt="#"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"alt="#"/>
 </p>
 
 </span>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Register.css';
 
-const Register = ({ history }) => {
+export const Register = ({ history }) => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -49,4 +49,3 @@ const Register = ({ history }) => {
     );
 };
 
-export default Register;

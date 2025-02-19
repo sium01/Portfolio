@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
 
-const Login = ({ history }) => {
+ export const Login = ({ history }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
@@ -50,4 +50,3 @@ const Login = ({ history }) => {
     );
 };
 
-export default Login;

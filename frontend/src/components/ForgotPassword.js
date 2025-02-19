@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './ForgotPassword.css';
 
-const ForgotPassword = () => {
+export const ForgotPassword = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:5000/api/users/forgot-password', { email });
+            await axios.post('http://localhost:5005/api/users/forgot-password', { email });
             setMessage('Password reset link sent to your email.');
         } catch (error) {
             console.error(error);
@@ -34,5 +34,3 @@ const ForgotPassword = () => {
         </div>
     );
 };
-
-export default ForgotPassword;
