@@ -1,34 +1,57 @@
-.brand{
+#dynamic-text{
  
 
  font-family: "Jaro", serif;
  font-optical-sizing: auto;
- font-weight: 400;
+ font-weight: 800;
  font-style: normal;
+ font-size: 2.5rem;
+ color: #F05032;
+ text-align: center;
+ margin-top: 50px;
+ margin-bottom: 50px;
+
 
 }
 .nav-links button{
-width: 120px;
-
-box-shadow: 2px 2px 30px rgba(244, 243, 248, 0.979);
-border: 3px rgb(0, 0, 0) solid;
-border-radius: 5px;
-margin: 30px auto;
+width: auto;
+border-radius: 15px;
+margin: 0px 0px;
 flex-direction: column;
 position:relative;
 margin-top: -60px;
+padding: 5px 30px;
+border: 2px solid whitesmoke;
 
 }
 .nav-links button {
-background-color: #ff7700;
- transition: background-color 0.5s; 
+ 
+transition: background-color 0.5s; 
 }
 
-.nav-links button:hover {
+.main-nav button:hover {
 
  background-color: #096cff; 
 }
 
 button:not(:last-child){
  margin-right: 5px;
+ margin-left:5px;
 }
+.nav-links {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top:70px;
+ margin-bottom: 30px;
+}
+.main-nav{
+ position: fixed;
+align-items: center;
+background-color:#339933;
+justify-content: center;
+width: 100%;
+
+
+}
+

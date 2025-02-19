@@ -4,7 +4,7 @@ import '../styles/skills.css';
 export const Skills = () => {
   return (
     <section className="skills-section">
-      <h2 style={{textAlign:"center"}}>My Technical Skills</h2>
+      <h2 style={{textAlign:"center",fontSize:"50px",fontWeight:"600"}}>My Technical Skills</h2>
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div className="skill-item" key={index}>
