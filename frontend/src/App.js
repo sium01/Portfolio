@@ -7,6 +7,7 @@ import { Resume } from './components/Resume';
 // import { Videos } from './components/Videos';
 import { Contact } from './components/Contact';
 import Login from './components/Login';
+import ForgotPassword from './components/ForgotPassword';
 import Register from './components/Register';
 import AddProject from './components/AddProject';
 import './App.css';
@@ -75,6 +76,7 @@ const App = () => {
                 {/* <Route path="/videos" component={Videos} /> */}
                 <Route path="/contact" component={Contact} />
                 <Route path="/login" component={Login} />
+                <Route path="/forgot-password" component={ForgotPassword} />
                 <Route path="/register" component={Register} />
                 <Route path="/add-project" component={AddProject} />
             </Switch>

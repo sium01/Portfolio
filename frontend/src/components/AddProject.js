@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './AddProject.css';
 
 const AddProject = ({ history }) => {
     const [title, setTitle] = useState('');
@@ -18,12 +19,12 @@ const AddProject = ({ history }) => {
     };
 
     return (
-        <div>
+        <div className="add-project-container">
             <h2>Add Project</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" />
-                <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" />
-                <input type="text" value={link} onChange={(e) => setLink(e.target.value)} placeholder="Link" />
+                <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" required />
+                <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required />
+                <input type="text" value={link} onChange={(e) => setLink(e.target.value)} placeholder="Link" required />
                 <button type="submit">Add Project</button>
             </form>
         </div>
